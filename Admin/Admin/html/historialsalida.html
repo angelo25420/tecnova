@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>PC MARKET - Historial de Salidas</title>
+  <link rel="stylesheet" href="../css/salida.css">
+</head>
+<body>
+
+  <!-- Menú dinámico -->
+  <nav class="menu" id="menuNav" style="display: none;">
+    <ul id="menuOpciones"></ul>
+  </nav>
+
+  <h1>Historial de Salidas</h1>
+
+  <div class="tabla-container">
+    <table id="tabla-salidas">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 id="total-vendido">Total vendido: S/ 0.00</h2>
+  <button onclick="limpiarSalidas()">🗑 Limpiar solo registros de salida</button>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+   <script src="../java/salida.js"></script>
+
+</body>
+</html>

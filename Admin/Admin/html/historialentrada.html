@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TECNOVA - Historial de Entradas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/entrada.css">
+   
+</head>
+<body>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="productos_manager.html">Gestión</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="info.html">Información</a></li>
+      <li><a href="historialentrada.html" class="active">Entradas</a></li>
+      <li><a href="historialsalida.html">Salidas</a></li>
+      <li><a href="cuenta.html">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <h1>Historial de Entradas de Productos</h1>
+
+  <div class="tabla-container">
+    <table id="tabla-entradas">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Total</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2 id="total-entradas">Total ingresado: S/ 0.00</h2>
+  <button onclick="limpiarEntradas()">🗑 Limpiar solo registros de entrada</button>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+   <script src="../java/entrada.js"></script>
+</body>
+</html>

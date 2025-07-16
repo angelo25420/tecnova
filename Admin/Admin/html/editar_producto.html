@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="../css/editarProducto.css">
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="productos_manager.html">Gestión</a></li>
+        <li><a href="tienda.html">tienda</a></li>
+        <li><a href="info.html" class="active">Información</a></li>
+        <li><a href="historialentrada.html">Entradas</a></li>
+        <li><a href="productos.html">editar_producto</a></li>
+        <li><a href="historialsalida.html">Salidas</a></li>
+        <li><a href="cuenta.html">iniciar seccion </a></li>
+      </ul>
+    </nav>
+
+    <h1>Catálogo de Productos</h1>
+
+    <div class="catalog-container" id="productCatalog">
+      <!-- Productos se cargan aquí -->
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+    <script src="../java/editarproducto.js"></script>
+  </body>
+</html>

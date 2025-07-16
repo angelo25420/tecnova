@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Historial de Compras - TECNOVA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+
+<!-- MENÚ -->
+    <nav class="menu">
+      <ul class="navigator"></ul>
+    </nav>
+    <script src="../java/nav.js"></script>
+
+  <header>
+    <h1>🛒 Historial de Compras</h1>
+  </header>
+
+  <!-- LOADER ROBOT -->
+  <div id="robot-loader">
+    <img src="Phoenix.gif" alt="TUS COMPRAS">
+    <p>TUS COMPRAS</p>
+  </div>
+
+  <!-- TABLA DE HISTORIAL -->
+  <div class="tabla-container" id="tablaHistorial">
+    <p class="vacio">TUS COMPRAS</p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="../java/carrito.js"></script>
+</body>
+</html>
